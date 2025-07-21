@@ -5,8 +5,10 @@
     <dimen name="item_padding_vertical">16dp</dimen>
     <dimen name="icon_size">24dp</dimen>
     <dimen name="divider_height">1dp</dimen>
-    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="title_text_size">22sp</dimen>
     <dimen name="section_margin_top">24dp</dimen>
     <dimen name="text_size">16sp</dimen>
     <dimen name="text_start">22sp</dimen>
+    <dimen name="container">48dp</dimen>
+    container
     </resources>
