@@ -25,7 +25,7 @@
                 android:layout_height="@dimen/icon_size"
                 android:layout_gravity="center"
                 android:layout_marginEnd="12dp"
-                android:src="@drawable/back" />
+                android:src="@drawable/back2" />
         </FrameLayout>
 
         <FrameLayout
@@ -60,9 +60,9 @@
             android:textSize="@dimen/text_size"/>
 
         <Switch
-            android:id="@+id/switch_theme"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_theme"/>
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +83,7 @@
         <ImageView
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
-            android:src="@drawable/share" />
+            android:src="@drawable/share2" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,7 +104,7 @@
         <ImageView
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
-            android:src="@drawable/support" />
+            android:src="@drawable/support2" />
     </LinearLayout>
 
     <LinearLayout
@@ -125,7 +125,7 @@
         <ImageView
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
-            android:src="@drawable/agreement" />
+            android:src="@drawable/agreement2" />
     </LinearLayout>
 
 </LinearLayout>
