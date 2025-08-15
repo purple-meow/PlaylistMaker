@@ -43,6 +43,14 @@
         <item name="android:background">@color/yp_blue</item>
     </style>
 
+    <style name="SearchActivityStyle">
+        <item name="android:background">@color/yp_white</item>
+    </style>
+
+    <style name="SettingsActivityStyle">
+        <item name="android:background">@color/yp_white</item>
+    </style>
+
     <style name="SearchEditTextStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

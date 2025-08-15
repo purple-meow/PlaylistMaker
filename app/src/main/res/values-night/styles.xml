@@ -39,9 +39,18 @@
 <item name="android:fontFamily">@font/ys_display_medium</item>
 <item name="android:textFontWeight">500</item>
 </style>
+
 <style name="MainActivityStyle">
 <item name="android:background">@color/yp_black</item>
 </style>
+
+    <style name="SearchActivityStyle">
+        <item name="android:background">@color/yp_black</item>
+    </style>
+
+    <style name="SettingsActivityStyle">
+        <item name="android:background">@color/yp_black</item>
+    </style>
 
 <style name="SearchEditTextStyle">
 <item name="android:layout_width">match_parent</item>
