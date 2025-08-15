@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/white">
+    tools:context=".SearchActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/search"
-        android:textSize="24sp"
-        android:textColor="@color/black"/>
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tool_bar"
+        style="@style/CustomToolbarTitle"
+        app:navigationIcon="@drawable/back2"
+        app:title="@string/search"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/searchInput"
+            style="@style/SearchEditTextStyle"/>
+
+        <ImageView
+            android:id="@+id/searchInputClear"
+            style="@style/SearchCancelButton"/>
+    </FrameLayout>
 </LinearLayout>

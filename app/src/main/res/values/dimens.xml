@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="title_bottom_margin">24dp</dimen>
-    <dimen name="default_padding">16dp</dimen>
-    <dimen name="item_padding_vertical">16dp</dimen>
-    <dimen name="icon_size">24dp</dimen>
-    <dimen name="divider_height">1dp</dimen>
-    <dimen name="title_text_size">22sp</dimen>
-    <dimen name="section_margin_top">24dp</dimen>
-    <dimen name="text_size">16sp</dimen>
-    <dimen name="text_start">22sp</dimen>
-    <dimen name="container">48dp</dimen>
+    <dimen name="button_text_size">22sp</dimen>
     <dimen name="icon_padding">8dp</dimen>
+    <dimen name="title">22sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="toolbar_text_size">12sp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="button_radius">16dp</dimen>
+    <dimen name="start_padding">16dp</dimen>
     <dimen name="end_padding">12dp</dimen>
     <dimen name="settings_pad_vert">21dp</dimen>
-    <dimen name="toolbar_text_size">12sp</dimen>
-    </resources>
+</resources>

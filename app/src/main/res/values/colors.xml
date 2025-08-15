@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue">#3772E7</color>
-    <color name="light_blue">#9FBBF3</color>
+    <color name="yp_blue">#3772E7</color>
+    <color name="yp_light_blue">#9FBBF3</color>
+    <color name="yp_white">#FFFFFFFF</color>
+    <color name="yp_black">#1A1B22</color>
     <color name="text_black">#000000</color>
+    <color name="yp__text_gray">#AEAFB4</color>
+    <color name="yp__light_gray">#E6E8EB</color>
+    <color name="yp_hint_black">#818C99</color>
 </resources>
