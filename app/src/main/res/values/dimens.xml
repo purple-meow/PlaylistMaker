@@ -10,5 +10,8 @@
     <dimen name="text_size">16sp</dimen>
     <dimen name="text_start">22sp</dimen>
     <dimen name="container">48dp</dimen>
-    container
+    <dimen name="icon_padding">8dp</dimen>
+    <dimen name="end_padding">12dp</dimen>
+    <dimen name="settings_pad_vert">21dp</dimen>
+    <dimen name="toolbar_text_size">12sp</dimen>
     </resources>
