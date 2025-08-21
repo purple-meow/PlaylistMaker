@@ -5,36 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    style="@style/SettingsActivityStyle"
     tools:context=".SettingsActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/tool_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/CustomToolbarTitle"
         app:navigationIcon="@drawable/back2"
-        app:title="@string/settings"
-        app:titleTextAppearance="@style/CustomToolbarTitle"
-        app:titleTextColor="@color/black"/>
+    app:title="@string/settings"/>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/selector"
         style="@style/SettingsItemStyle"
         android:layout_marginTop="24dp"
         android:gravity="center_vertical"
-        android:text="@string/dark_theme" />
+        android:text="@string/dark_theme"
+        app:thumbTint="@color/switch_thumb_color"
+        app:trackTint="@color/switch_track_color"/>
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/shareLine"
         style="@style/SettingsItemStyle"
         android:drawableEnd="@drawable/share2"
         android:text="@string/share" />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/supportLine"
         style="@style/SettingsItemStyle"
         android:drawableEnd="@drawable/support2"
         android:text="@string/support" />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/agreementLine"
         style="@style/SettingsItemStyle"
         android:drawableEnd="@drawable/agreement2"
         android:text="@string/agreement" />
-
 </LinearLayout>
