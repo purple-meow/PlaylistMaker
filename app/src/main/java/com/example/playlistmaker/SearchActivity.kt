@@ -10,6 +10,9 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.google.android.material.appbar.MaterialToolbar
 
 class SearchActivity : AppCompatActivity() {
@@ -22,6 +25,10 @@ class SearchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
+
+        val recycler = findViewById<RecyclerView>(R.id.trackList)
+        recycler.layoutManager = LinearLayoutManager(this)
+        recycler.adapter = TrackAdapter(MockTracks.getMockTracks())
 
         val navBack = findViewById<MaterialToolbar>(R.id.tool_bar)
 

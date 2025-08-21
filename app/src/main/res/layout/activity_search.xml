@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    style="@style/SearchActivityStyle"
     tools:context=".SearchActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -13,19 +12,21 @@
         style="@style/CustomToolbarTitle"
         app:navigationIcon="@drawable/back2"
         app:title="@string/search"/>
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:paddingHorizontal="16dp"
         android:layout_marginTop="8dp">
-
         <EditText
             android:id="@+id/searchInput"
             style="@style/SearchEditTextStyle"/>
-
         <ImageView
             android:id="@+id/searchInputClear"
             style="@style/SearchCancelButton"/>
     </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trackList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"/>
 </LinearLayout>
