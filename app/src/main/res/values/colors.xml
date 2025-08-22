@@ -8,4 +8,6 @@
     <color name="yp__text_gray">#AEAFB4</color>
     <color name="yp__light_gray">#E6E8EB</color>
     <color name="yp_hint_black">#818C99</color>
+    <color name="track_black">#000000</color>
+    <color name="track_gray">#AEAFB4</color>
 </resources>
