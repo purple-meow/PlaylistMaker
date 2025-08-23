@@ -10,4 +10,6 @@
     <color name="yp_hint_black">#818C99</color>
     <color name="track_black">#000000</color>
     <color name="track_gray">#AEAFB4</color>
+    <color name="search_placeholder_black">#1A1B22</color>
+    <color name="search_placeholder_white">#FFFFFFFF</color>
 </resources>
