@@ -27,6 +27,37 @@
             android:id="@+id/searchInputClear"
             style="@style/SearchCancelButton"/>
     </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/searchHistoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/searchHistoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SearchTextTitleStyle"
+                android:layout_marginTop="50dp"
+                android:text="@string/searchHistoryTitle"
+                android:textFontWeight="500"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trackHistoryList"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/clearHistoryBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SearchButtons"
+                android:text="@string/clearHistoryBtnText"/>
+        </LinearLayout>
+    </ScrollView>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/trackList"
         android:layout_width="match_parent"
@@ -43,32 +74,21 @@
         tools:src="@drawable/empty_library"/>
     <TextView
         android:id="@+id/placeHolderMessage"
+        style="@style/SearchTextTitleStyle"
         android:paddingHorizontal="24dp"
         android:layout_marginTop="@dimen/placeholder_text_margin_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="19sp"
-        android:fontFamily="@font/ys_display_medium"
         android:textFontWeight="400"
-        android:textColor="@color/search_placeholder_black"
         android:gravity="center"
         android:visibility="gone"
         tools:text="@string/no_connection"/>
     <Button
         android:id="@+id/refreshBtn"
-        android:layout_marginTop="@dimen/placeholder_button_margin_top"
-        android:layout_gravity="center_horizontal"
+        style="@style/SearchButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cornerRadius="54dp"
-        android:backgroundTint="@color/search_placeholder_black"
-        android:textSize="14sp"
-        android:textAllCaps="false"
-        android:fontFamily="@font/ys_display_medium"
-        android:textFontWeight="500"
         android:text="@string/refreshBtn"
-        android:textColor="@color/search_placeholder_white"
         android:visibility="gone"/>
 
 </LinearLayout>
