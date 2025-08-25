@@ -2,4 +2,6 @@
 <resources>
     <color name="track_black">#FFFFFFFF</color>
     <color name="track_gray">#FFFFFFFF</color>
+    <color name="search_placeholder_black">#FFFFFFFF</color>
+    <color name="search_placeholder_white">#1A1B22</color>
 </resources>

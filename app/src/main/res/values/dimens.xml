@@ -10,4 +10,7 @@
     <dimen name="start_padding">16dp</dimen>
     <dimen name="end_padding">12dp</dimen>
     <dimen name="settings_pad_vert">21dp</dimen>
+    <dimen name="placeholder_image_margin_top">110dp</dimen>
+    <dimen name="placeholder_text_margin_top">16dp</dimen>
+    <dimen name="placeholder_button_margin_top">24dp</dimen>
 </resources>

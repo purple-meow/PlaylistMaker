@@ -16,4 +16,7 @@
     <string name="supportEmailText" translatable="false">Спасибо разработчикам и разработчицам за крутое приложение!</string>
     <string name="agreementLink" translatable="false">https://yandex.ru/legal/practicum_offer/</string>
     <string name="media_library">Медиатека</string>
+    <string name="not_found">Ничего не нашлось</string>
+    <string name="no_connection">Проблемы со связью  Загрузка не удалась. Проверьте подключение к интернету</string>
+    <string name="refreshBtn">Обновить</string>
 </resources>

@@ -6,7 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".SearchActivity">
-
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/tool_bar"
         style="@style/CustomToolbarTitle"
@@ -17,9 +16,13 @@
         android:layout_height="36dp"
         android:paddingHorizontal="16dp"
         android:layout_marginTop="8dp">
+
         <EditText
             android:id="@+id/searchInput"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
             style="@style/SearchEditTextStyle"/>
+
         <ImageView
             android:id="@+id/searchInputClear"
             style="@style/SearchCancelButton"/>
@@ -29,4 +32,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"/>
+    <ImageView
+        android:id="@+id/placeHolderImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/placeholder_image_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        tools:src="@drawable/empty_library"/>
+    <TextView
+        android:id="@+id/placeHolderMessage"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="@dimen/placeholder_text_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="19sp"
+        android:fontFamily="@font/ys_display_medium"
+        android:textFontWeight="400"
+        android:textColor="@color/search_placeholder_black"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="@string/no_connection"/>
+    <Button
+        android:id="@+id/refreshBtn"
+        android:layout_marginTop="@dimen/placeholder_button_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="54dp"
+        android:backgroundTint="@color/search_placeholder_black"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ys_display_medium"
+        android:textFontWeight="500"
+        android:text="@string/refreshBtn"
+        android:textColor="@color/search_placeholder_white"
+        android:visibility="gone"/>
+
 </LinearLayout>
