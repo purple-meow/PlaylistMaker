@@ -6,8 +6,9 @@ import java.util.Locale
 data class Track(
     val trackName: String,
     val artistName: String,
-    private val trackTimeMillis: Long,
-    val artworkUrl100: String
+    val trackTimeMillis: Long,
+    val artworkUrl100: String,
+    val trackId: String
 ) {
     val trackTime: String
     get() = formatTime(trackTimeMillis)

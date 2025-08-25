@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.switchmaterial.SwitchMaterial
 import com.google.android.material.textview.MaterialTextView
 
 class SettingsActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class SettingsActivity : AppCompatActivity() {
         navBack.setNavigationOnClickListener {
             finish()
         }
+        setThemeSwitcher()
 
         val shareLine = findViewById<MaterialTextView>(R.id.shareLine)
         shareLine.setOnClickListener {
@@ -44,6 +46,17 @@ class SettingsActivity : AppCompatActivity() {
             val browseIntent = Intent(Intent.ACTION_VIEW)
             browseIntent.data = Uri.parse(getString(R.string.agreementLink))
             startActivity(browseIntent)
+        }
+
+    }
+
+    private fun setThemeSwitcher() {
+        val themeSwitcher = findViewById<SwitchMaterial>(R.id.selector)
+        themeSwitcher.isChecked = (applicationContext as App).darkTheme
+
+        themeSwitcher.setOnCheckedChangeListener { switcher, checked ->
+            (applicationContext as App).switchTheme(checked)
+
         }
     }
 }

@@ -14,4 +14,6 @@
     <string name="not_found">Nichego ne nashlos\' 17 / 5 000 Nothing found</string>
     <string name="no_connection">Connection Problems Download failed. Check your internet connection.</string>
     <string name="refreshBtn">Refresh</string>
+    <string name="searchHistoryTitle">You searched</string>
+    <string name="clearHistoryBtnText">Clear history</string>
 </resources>
